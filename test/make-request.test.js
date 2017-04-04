@@ -26,7 +26,7 @@ describe('make-request', function() {
 	});
 
 	it('should send port request to specified url with specified body', function() {
-		var url = 'http://example.com';
+		var url = 'https://example.com';
 		var body = 'some body';
 
 		nock(url).post('/', body).reply(200, goodResponse);
@@ -37,7 +37,7 @@ describe('make-request', function() {
 	});
 
 	it('should return resolved promise with correct object if response contains "result"', function() {
-		var url = 'http://example.com';
+		var url = 'https://example.com';
 		var body = 'some body';
 
 		nock(url).post('/', body).reply(200, goodResponse);
@@ -48,7 +48,7 @@ describe('make-request', function() {
 	});
 
 	it('should return rejected promise with correct object if response doesn\'t contain "result"', function() {
-		var url = 'http://example.com';
+		var url = 'https://example.com';
 		var body = 'some body';
 
 		nock(url).post('/', body).reply(200, errorResponse);
@@ -61,7 +61,7 @@ describe('make-request', function() {
 	});
 
 	it('should return rejected promise if request failed', function() {
-		var url = 'http://example.com';
+		var url = 'https://example.com';
 		var body = 'some body';
 
 		nock(url).post('/', body).replyWithError('something awful happened');
