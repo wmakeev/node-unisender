@@ -1,6 +1,6 @@
 {
-  "name": "unisender",
-  "version": "1.0.2",
+  "name": "@wmakeev/unisender",
+  "version": "1.0.3",
   "readmeFilename": "README.md",
   "description": "Promise-based wrapper for unisender api",
   "keywords": [
